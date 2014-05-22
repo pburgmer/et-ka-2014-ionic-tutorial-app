@@ -1,0 +1,7 @@
+{
+  "name": "ionic-tutorial-app",
+  "dependencies": {
+    "angular": "1.2.16",
+    "ionic": "1.0.0-beta.6"
+  }
+}
