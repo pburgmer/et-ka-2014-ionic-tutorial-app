@@ -1,6 +1,8 @@
+'use strict';
+
 angular.module('starter.dash', []);
 
-angular.module('starter').config(function($stateProvider) {
+angular.module('starter').config(function ($stateProvider) {
 
   $stateProvider
     .state('tab.dash', {
@@ -15,5 +17,5 @@ angular.module('starter').config(function($stateProvider) {
 
 });
 
-angular.module('starter.dash').controller('DashCtrl', function($scope) {
+angular.module('starter.dash').controller('DashCtrl', function () {
 });

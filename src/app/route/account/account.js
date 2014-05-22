@@ -1,19 +1,21 @@
-  angular.module('starter.account', []);
+'use strict';
 
-  angular.module('starter.account').config(function($stateProvider) {
+angular.module('starter.account', []);
 
-    $stateProvider
-      .state('tab.account', {
-        url: '/account',
-        views: {
-          'tab-account': {
-            templateUrl: 'route/account/account.html',
-            controller: 'AccountCtrl'
-          }
+angular.module('starter.account').config(function ($stateProvider) {
+
+  $stateProvider
+    .state('tab.account', {
+      url: '/account',
+      views: {
+        'tab-account': {
+          templateUrl: 'route/account/account.html',
+          controller: 'AccountCtrl'
         }
-      });
+      }
+    });
 
-  });
+});
 
-  angular.module('starter.account').controller('AccountCtrl', function($scope) {
-  });
+angular.module('starter.account').controller('AccountCtrl', function () {
+});

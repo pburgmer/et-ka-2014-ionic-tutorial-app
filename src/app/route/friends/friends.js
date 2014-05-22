@@ -1,6 +1,8 @@
+'use strict';
+
 angular.module('starter.friends', []);
 
-angular.module('starter.friends').config(function($stateProvider) {
+angular.module('starter.friends').config(function ($stateProvider) {
 
   $stateProvider
     .state('tab.friends', {
@@ -23,7 +25,7 @@ angular.module('starter.friends').config(function($stateProvider) {
     });
 });
 
-angular.module('starter.friends').factory('Friends', function() {
+angular.module('starter.friends').factory('Friends', function () {
   // Might use a resource here that returns a JSON array
 
   // Some fake testing data
@@ -35,20 +37,20 @@ angular.module('starter.friends').factory('Friends', function() {
   ];
 
   return {
-    all: function() {
+    all: function () {
       return friends;
     },
-    get: function(friendId) {
+    get: function (friendId) {
       // Simple index lookup
       return friends[friendId];
     }
-  }
+  };
 });
 
-angular.module('starter.friends').controller('FriendsCtrl', function($scope, Friends) {
+angular.module('starter.friends').controller('FriendsCtrl', function ($scope, Friends) {
   $scope.friends = Friends.all();
 });
 
-angular.module('starter.friends').controller('FriendDetailCtrl', function($scope, $stateParams, Friends) {
+angular.module('starter.friends').controller('FriendDetailCtrl', function ($scope, $stateParams, Friends) {
   $scope.friend = Friends.get($stateParams.friendId);
-})
+});

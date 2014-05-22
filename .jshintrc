@@ -14,6 +14,7 @@
     "angular",
     "_",
     "lodash",
+    "cordova",
 
     // test code
     "beforeEach",
